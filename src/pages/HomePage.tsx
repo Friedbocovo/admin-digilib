@@ -134,12 +134,14 @@ export default function HomePage() {
             <img src={Logo} alt="Logo" className="md:h-15 md:w-15 h-10 w-10" />
             <span style={styles.logoText}>DigiLib</span>
           </div>
-<button
-            onClick={handleAccessLibrary}
-           className='h-12 w-auto flex items-center gap-2 bg-white text-purple-600 font-semibold px-4 rounded-lg hover:shadow-lg transition-shadow duration-300'
+          <button
+            onClick={handleAdminLogin}
+            style={styles.adminBtn}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.25)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}
           >
-            <span className='md:flex hidden'>Accéder à la Bibliothèque</span>
-            <ArrowRight size={22} strokeWidth={2.5} />
+            <User size={18} />
+            <span>Accedez a la page admin</span>
           </button>
         </header>
 
@@ -190,20 +192,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <button
-            onClick={handleAccessLibrary}
-            style={styles.ctaButton}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-3px)'
-              e.currentTarget.style.boxShadow = '0 15px 50px rgba(0,0,0,0.4)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0)'
-              e.currentTarget.style.boxShadow = '0 10px 40px rgba(0,0,0,0.3)'
-            }}
+                <button
+            onClick={handleAdminLogin}
+            style={styles.adminBtn}
+            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.25)'}
+            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}
           >
-            <span>Accéder à la Bibliothèque</span>
-            <ArrowRight size={22} strokeWidth={2.5} />
+            <User size={18} />
+            <span>Accedez a la page admin</span>
           </button>
 
           {/* SECTION LIVRES GRATUITS */}

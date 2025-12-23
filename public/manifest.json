@@ -1,6 +1,6 @@
 {
-  "name": "DigiLib",
-  "short_name": "DigiLib",
+  "name": "ADMIN",
+  "short_name": "ADMIN",
   "description": "Votre bibliothèque numérique illimitée. Des milliers de livres à télécharger.",
   "start_url": "/",
   "display": "standalone",
